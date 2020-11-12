@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.3.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
